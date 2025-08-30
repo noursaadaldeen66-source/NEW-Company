@@ -4,6 +4,103 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <h1>تواصل معنا</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="services.html">الخدمات</a></li>
+        <li><a href="team.html">الفريق</a></li>
+        <li><a href="contact.html">التواصل</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <form action="#" method="post">
+        <fieldset>
+          <legend>معلومات التواصل</legend>
+
+          <label for="name">الاسم الكامل:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">البريد الإلكتروني:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+          />
+
+          <label for="phone">رقم الهاتف:</label>
+          <input type="tel" id="phone" name="phone" />
+
+          <label for="city">اختر المدينة:</label>
+          <select id="city" name="city">
+            <option value="riyadh">الرياض</option>
+            <option value="jeddah">جدة</option>
+            <option value="dammam">الدمام</option>
+          </select>
+
+          <fieldset>
+            <legend>الجنس:</legend>
+            <input type="radio" id="male" name="gender" value="male" />
+            <label for="male">ذكر</label>
+            <input type="radio" id="female" name="gender" value="female" />
+            <label for="female">أنثى</label>
+          </fieldset>
+
+          <input type="checkbox" id="terms" name="terms" required />
+          <label for="terms">أوافق على الشروط والأحكام</label>
+
+          <button type="submit">إرسال</button>
+          <button type="reset">إعادة تعيين</button>
+        </fieldset>
+      </form>
+
+      <img src="images/map.jpg" alt="خريطة موقع الشركة" />
+
+      <ul>
+        <li><a href="https://twitter.com" target="_blank">تويتر</a></li>
+        <li><a href="https://facebook.com" target="_blank">فيسبوك</a></li>
+        <li><a href="https://linkedin.com" target="_blank">لينكدإن</a></li>
+      </ul>
+
+      <table>
+        <tr>
+          <th>وسيلة التواصل</th>
+          <th>الرابط</th>
+        </tr>
+        <tr>
+          <td>فيسبوك</td>
+          <td>
+            <a href="https://twitter.com" target="_blank">زورونا على فيسبوك</a>
+          </td>
+        </tr>
+      </table>
+
+      <video controls>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/XR6OaznDwl8?si=EdhJx0ZN7P_k9I6X"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </video>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 شركة ناشئة. جميع الحقوق محفوظة.</p>
+      <a href="index.html">عودة إلى الرئيسية</a>
+    </footer>
+  </body>
 </html>
