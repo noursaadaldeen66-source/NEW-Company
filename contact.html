@@ -1,18 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <title>تواصل معنا - شركة ناشئة</title>
+    <link rel="stylesheet" href="/CSS/style.css" />
   </head>
   <body>
-    <header>
-      <h1>تواصل معنا</h1>
+    <header class="header">
+      <img src="logo.png" alt="شعار الشركة" title="شعار شركة ناشئة" />
+      <h1 id="page-title">تواصل معنا</h1>
     </header>
 
-    <nav>
-      <ul>
+    <nav class="nav">
+      <ul class="nav-list">
         <li><a href="index.html">الرئيسية</a></li>
         <li><a href="services.html">الخدمات</a></li>
         <li><a href="team.html">الفريق</a></li>
@@ -21,39 +22,32 @@
     </nav>
 
     <main>
-      <form action="#" method="post">
-        <fieldset>
+      <section class="contact-section" id="contact-section">
+        <fieldset class="contact-form" id="contact-form">
           <legend>معلومات التواصل</legend>
-
-          <label for="name">الاسم الكامل:</label>
-          <input type="text" id="name" name="name" required />
+          <label for="full-name">الاسم الكامل:</label>
+          <input type="text" id="full-name" name="full-name" required />
 
           <label for="email">البريد الإلكتروني:</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            required
-            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-          />
+          <input type="email" id="email" name="email" required />
 
           <label for="phone">رقم الهاتف:</label>
-          <input type="tel" id="phone" name="phone" />
+          <input type="tel" id="phone" name="phone" required />
 
           <label for="city">اختر المدينة:</label>
           <select id="city" name="city">
-            <option value="riyadh">الرياض</option>
-            <option value="jeddah">جدة</option>
-            <option value="dammam">الدمام</option>
+            <option value="دمشق">دمشق</option>
+            <option value="حمص">حمص</option>
+            <option value="حماة">حماة</option>
           </select>
 
-          <fieldset>
-            <legend>الجنس:</legend>
-            <input type="radio" id="male" name="gender" value="male" />
+          <div class="gender-group">
+            <label>الجنس:</label>
+            <input type="radio" id="male" name="gender" value="ذكر" />
             <label for="male">ذكر</label>
-            <input type="radio" id="female" name="gender" value="female" />
+            <input type="radio" id="female" name="gender" value="أنثى" />
             <label for="female">أنثى</label>
-          </fieldset>
+          </div>
 
           <input type="checkbox" id="terms" name="terms" required />
           <label for="terms">أوافق على الشروط والأحكام</label>
@@ -61,46 +55,52 @@
           <button type="submit">إرسال</button>
           <button type="reset">إعادة تعيين</button>
         </fieldset>
-      </form>
 
-      <img src="images/map.jpg" alt="خريطة موقع الشركة" />
+        <div class="social-links">
+          <h3>وسائل التواصل</h3>
+          <ul class="social-list">
+            <li><a href="https://twitter.com" target="_blank">تويتر</a></li>
+            <li><a href="https://facebook.com" target="_blank">فيسبوك</a></li>
+            <li><a href="https://linkedin.com" target="_blank">لينكدإن</a></li>
+          </ul>
 
-      <ul>
-        <li><a href="https://twitter.com" target="_blank">تويتر</a></li>
-        <li><a href="https://facebook.com" target="_blank">فيسبوك</a></li>
-        <li><a href="https://linkedin.com" target="_blank">لينكدإن</a></li>
-      </ul>
-
-      <table>
-        <tr>
-          <th>وسيلة التواصل</th>
-          <th>الرابط</th>
-        </tr>
-        <tr>
-          <td>فيسبوك</td>
-          <td>
-            <a href="https://twitter.com" target="_blank">زورونا على فيسبوك</a>
-          </td>
-        </tr>
-      </table>
-
-      <video controls>
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/XR6OaznDwl8?si=EdhJx0ZN7P_k9I6X"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
-      </video>
+          <table class="social-table">
+            <thead>
+              <tr>
+                <th>وسيلة التواصل</th>
+                <th>الرابط</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>فيسبوك</td>
+                <td>
+                  <a href="https://facebook.com" target="_blank"
+                    >زورونا على فيسبوك</a
+                  >
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/XR6OaznDwl8?si=EdhJx0ZN7P_k9I6X"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+          <img src="map.png" alt="خريطة الموقع" title="موقع شركة ناشئة" />
+        </div>
+      </section>
     </main>
 
-    <footer>
+    <footer class="footer">
       <p>&copy; 2025 شركة ناشئة. جميع الحقوق محفوظة.</p>
       <a href="index.html">عودة إلى الرئيسية</a>
     </footer>
+    <!-- تعليق: نهاية الصفحة -->
   </body>
 </html>

@@ -1,23 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>شركة high tech</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <title>مرحبا بكم في شركة ناشئة</title>
+    <link rel="stylesheet" href="/CSS/style.css" />
   </head>
   <body>
-    <header>
-      <img src="images/logo.png" alt="شعار الشركة" title="شعار شركة ناشئة" />
-      <h1>مرحبا بكم في شركة ناشئة</h1>
-      <p>
+    <header class="header">
+      <img src="/img/logo.png" alt="شعار الشركة" title="شعار شركة ناشئة" />
+      <h1 id="welcome-title">مرحبا بكم في شركة ناشئة</h1>
+      <p id="company-desc">
         شركة ناشئة تقدم حلولاً تقنية مبتكرة لتلبية احتياجات العملاء في مختلف
         المجالات.
       </p>
     </header>
 
-    <nav>
-      <ul>
+    <nav class="nav">
+      <ul class="nav-list">
         <li><a href="index.html">الرئيسية</a></li>
         <li><a href="services.html">الخدمات</a></li>
         <li><a href="team.html">الفريق</a></li>
@@ -26,46 +26,55 @@
     </nav>
 
     <main>
-      <img src="images/cover.jpg" alt="صورة غلاف الشركة" title="غلاف الشركة" />
+      <section class="hero" id="hero-section">
+        <img src="/img/cover.jpeg" alt="صورة غلاف" title="معرض الشركة" />
+      </section>
 
-      <section>
-        <article>
+      <section class="features" id="features-section">
+        <article class="card" id="feature1">
           <h2>ابتكار الحلول التقنية</h2>
           <p>نعمل على تطوير حلول تقنية حديثة لتحسين تجربة العملاء</p>
           <a href="#">اقرأ المزيد</a>
         </article>
-        <article>
+        <article class="card" id="feature2">
           <h2>التوسع في الأسواق</h2>
           <p>نسعى للوصول إلى أسواق جديدة بمنتجاتنا المبتكرة</p>
           <a href="#">اقرأ المزيد</a>
         </article>
-        <article>
+        <article class="card" id="feature3">
           <h2>الشراكات الاستراتيجية</h2>
           <p>نبني علاقات قوية مع شركاء عالميين</p>
           <a href="#">اقرأ المزيد</a>
         </article>
       </section>
 
-      <table>
-        <tr>
-          <th>العنصر</th>
-          <th>الوصف</th>
-        </tr>
-        <tr>
-          <td>خدمة مميزة</td>
-          <td>توفير حلول تقنية متقدمة</td>
-        </tr>
+      <table class="data-table" id="data-table">
+        <thead>
+          <tr>
+            <th>العنصر</th>
+            <th>الوصف</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>خدمة مميزة</td>
+            <td>توفير حلول تقنية متقدمة</td>
+          </tr>
+        </tbody>
       </table>
 
-      <audio controls>
-        <source src="audio/welcome.mp3" type="audio/mpeg" />
-        متصفحك لا يدعم تشغيل الصوت
-      </audio>
+      <div class="media" id="audio-player">
+        <audio controls>
+          <source src="audio.mp3" type="audio/mpeg" />
+          متصفحك لا يدعم تشغيل الصوت
+        </audio>
+      </div>
     </main>
 
-    <footer>
+    <footer class="footer">
       <p>&copy; 2025 شركة ناشئة. جميع الحقوق محفوظة</p>
       <a href="index.html">عودة إلى الرئيسية</a>
     </footer>
+    <!-- تعليق: نهاية الصفحة الرئيسية -->
   </body>
 </html>
